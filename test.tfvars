@@ -15,3 +15,6 @@ private_subnet_name = "Terraform_Private_Subnet-testing"
 Main_Routing_Table = "Terraform_Main_table-testing"
 key_name = "LaptopKey"
 environment = "dev"
+
+terraformstatefile = "myterraform.tfstate"
+s3bucketname = "ramterraformbucket"

@@ -87,13 +87,4 @@ resource "aws_security_group" "allow_all" {
     to_port         = 0
     protocol        = "-1"
     cidr_blocks     = ["0.0.0.0/0"]
-    }
  
- terraform {
-  backend "s3" {
-    bucket = "${var.s3bucketname}"
-    key    = "${var.terraformstatefile}"
-    region = "var.region"
-  }
-}
-
